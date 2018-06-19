@@ -84,6 +84,7 @@ gulp watch
 | [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) | Laravel Debugbar | Laravel Debugbar |
 | [guzzlehttp/guzzle](http://guzzle-cn.readthedocs.io/zh_CN/latest/overview.html) | http请求封装 | 请求外部API |
 | [doctrine/dbal](https://github.com/doctrine/dbal) | 数据库抽象层 | 对已存在的数据表作更改 |
+| [overtrue/laravel-lang](https://github.com/overtrue/laravel-lang) | 多语言支持 | 多语言支持 |
 
 ## 自定义 Artisan 命令列表
 
