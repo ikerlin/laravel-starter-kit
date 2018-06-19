@@ -75,6 +75,7 @@ gulp watch
 | --- | --- | --- |   
 | [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper.git) | IDE帮助工具 | 生成相应代码提示 |
 | [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) | Laravel Debugbar | Laravel Debugbar |
+| [guzzlehttp/guzzle](http://guzzle-cn.readthedocs.io/zh_CN/latest/overview.html) | http请求封装 | 请求外部API |
 
 ## 自定义 Artisan 命令列表
 
