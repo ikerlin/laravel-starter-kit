@@ -73,7 +73,7 @@ gulp watch
 
 | 扩展包 | 一句话描述 | 在本项目中的使用案例 |  
 | --- | --- | --- |   
-无
+| [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper.git) | IDE帮助工具 | 生成相应代码提示 |
 
 ## 自定义 Artisan 命令列表
 
