@@ -23,6 +23,7 @@
 克隆源代码到本地：
 
     > git clone https://github.com/ikerlin/laravel-starter-kit.git
+    > composer install
 
 #### 2. 生成配置文件
 
