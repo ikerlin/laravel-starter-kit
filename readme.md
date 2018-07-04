@@ -22,17 +22,33 @@
 
 克隆源代码到本地：
 
-    > git clone https://github.com/ikerlin/laravel-starter-kit.git
-    > composer install
+    $ git clone https://github.com/ikerlin/laravel-starter-kit.git
+    $ composer install
 
-#### 2. 生成配置文件
+#### 2. 创建环境配置文件
 
-    > cp .env.example .env
-
-#### 3. 配置`.env` 数据库、redis等相关参数
-    > php artisan key:generate
-    > php artisan admin:install
+    $ cp .env.example .env
     
+#### 3. 配置`.env` key、数据库、redis等相关参数
+    $ php artisan key:generate
+    $ 其他配置...
+
+#### 4. 迁移数据库
+    $ php artisan migrate
+
+#### 5. 导入后台相关表SQL文件
+    $ mysql DATABASE_NAME < database/admin.sql
+
+### 链接入口
+* 首页地址：http://example.test/
+* 管理后台：http://example.test/admin
+
+后台用户名密码均为：`admin`
+
+至此, 安装完成。
+
+## 开发配置
+> 请修改 `.env` 文件为 `APP_ENV=local` 和 `APP_DEBUG=true` 。
 
 ### 前端工具集安装
 
@@ -66,16 +82,8 @@ gulp
 gulp watch
 ```
 
-### 链接入口
-
-> 请修改 `.env` 文件为 `APP_ENV=local` 和 `APP_DEBUG=true` 。
-
-* 首页地址：http://example.test/
-* 管理后台：http://example.test/admin
-
-后台用户名密码均为：`admin`
-
-至此, 安装完成。
+### 开发完成导出台配置SQL文件
+    $ mysqldump -u USER -p -t DATABASE_NAME admin_menu admin_permissions admin_role_menu admin_role_permissions admin_role_users admin_roles admin_user_permissions admin_users > database/admin.sql
 
 ## 扩展包描述
 
