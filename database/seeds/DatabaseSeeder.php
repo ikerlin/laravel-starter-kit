@@ -11,7 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(Encore\Admin\Auth\Database\AdminTablesSeeder::class);
-        $this->call(AdminMenuTablesSeeder::class);
+        // $this->call(UsersTableSeeder::class);
     }
 }
