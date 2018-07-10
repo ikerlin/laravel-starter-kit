@@ -15,10 +15,10 @@ class HomeController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('Dashboard');
-            $content->description('Description...');
+            $content->header('仪表盘');
+            $content->description('信息');
 
-            $content->row(Dashboard::title());
+//            $content->row(Dashboard::title());
 
             $content->row(function (Row $row) {
 
