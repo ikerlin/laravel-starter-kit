@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "626abaca1ca8842c66ebfc7b10f597ad",
+    "content-hash": "967b234921e6cc100b38e750cad74b86",
     "packages": [
         {
             "name": "caouecs/laravel-lang",
@@ -678,16 +678,16 @@
         },
         {
             "name": "encore/laravel-admin",
-            "version": "v1.5.14",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/z-song/laravel-admin.git",
-                "reference": "3f5e6d47a3294baafe3a8844f6e5177e50e4c138"
+                "reference": "f9d42460b31b07e1f2d2c05fffca15c3d09bf655"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/z-song/laravel-admin/zipball/3f5e6d47a3294baafe3a8844f6e5177e50e4c138",
-                "reference": "3f5e6d47a3294baafe3a8844f6e5177e50e4c138",
+                "url": "https://api.github.com/repos/z-song/laravel-admin/zipball/f9d42460b31b07e1f2d2c05fffca15c3d09bf655",
+                "reference": "f9d42460b31b07e1f2d2c05fffca15c3d09bf655",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -697,9 +697,10 @@
                 ]
             },
             "require": {
+                "doctrine/dbal": "2.*",
                 "laravel/framework": "~5.5",
                 "php": ">=7.0.0",
-                "symfony/dom-crawler": "~3.1"
+                "symfony/dom-crawler": "~3.1|~4.0"
             },
             "require-dev": {
                 "fzaninotto/faker": "~1.4",
@@ -750,7 +751,7 @@
                 "grid",
                 "laravel"
             ],
-            "time": "2018-06-06T13:40:40+00:00"
+            "time": "2018-09-09T08:40:17+00:00"
         },
         {
             "name": "erusev/parsedown",
