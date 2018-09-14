@@ -7,9 +7,17 @@
 |
 */
 
-function testFunc()
-{
-    echo 'testFunc';
+if (!function_exists('testFunc')) {
 
-    return null;
+    /**
+     * test function
+     *
+     * @return null
+     */
+    function testFunc()
+    {
+        echo 'testFunc';
+
+        return null;
+    }
 }
