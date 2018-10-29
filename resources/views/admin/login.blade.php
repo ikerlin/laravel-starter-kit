@@ -56,6 +56,19 @@
       </div>
       <div class="row">
 
+        <div class="form-group has-feedback {!! !$errors->has('captcha') ?: 'has-error' !!}">
+
+          @if($errors->has('captcha'))
+            @foreach($errors->get('captcha') as $message)
+              <label class="control-label" for="inputError" style=" margin-left: 15px"><i class="fa fa-times-circle-o"></i>{{$message}}</label></br>
+            @endforeach
+          @endif
+
+          <input type="text" class="form-control" style="display: inline;width: 55%; margin-left: 15px" placeholder="{{ trans('admin.captcha') }}" name="captcha">
+          <span class="glyphicon glyphicon-refresh form-control-feedback captcha" style="right:39%;z-index: 100"></span>
+          <img  class="captcha" src="{{ captcha_src('admin') }}">
+        </div>
+
         <!-- /.col -->
         <div class="col-xs-4 col-md-offset-4">
           <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -83,6 +96,10 @@
       radioClass: 'iradio_square-blue',
       increaseArea: '20%' // optional
     });
+
+      $('.captcha').click(function () {
+          $('img[class="captcha"]').attr('src','{{ captcha_src('admin') }}'+Math.random());
+      });
   });
 </script>
 </body>
